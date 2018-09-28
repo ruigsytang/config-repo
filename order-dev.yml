@@ -13,4 +13,4 @@ spring:
     port: 5672
     username: guest
     password: guest    
-env: test2
+env: test3
