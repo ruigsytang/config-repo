@@ -1,0 +1,16 @@
+zuul:
+  routes:
+  # /myProduct/product/list -> /product/product/list
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      # 敏感头信息传递
+      sensitiveHeaders:
+  # 简洁写法
+#    product: /myProduct/**
+    #排除某些 地址
+  ignored-patterns:
+# 简写/**/product/listForOrder
+#    - /product/product/listForOrder
+#    - /myProduct/product/listForOrder
+     - /**/product/listForOrder
