@@ -15,6 +15,10 @@ zuul:
 #    - /product/product/listForOrder
 #    - /myProduct/product/listForOrder
      - /**/product/listForOrder
+# springboot2.x中使用feign zuul超时配置     
+ribbon:
+  ReadTimeout: 5000
+  SocketTimeout: 5000
 spring:
   redis:
     host: 192.168.1.7
